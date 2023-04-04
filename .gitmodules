@@ -1,6 +1,13 @@
 [submodule "app"]
 	path = app
 	url = https://github.com/Zero-WORK-Zero-EXPERIENCE/app.git
+	update = merge
+	branch = main
+	ignore = all
+
 [submodule "api"]
 	path = api
 	url = https://github.com/Zero-WORK-Zero-EXPERIENCE/api.git
+	update = merge
+	branch = main
+	ignore = all
