@@ -1,0 +1,6 @@
+[submodule "app"]
+	path = app
+	url = https://github.com/Zero-WORK-Zero-EXPERIENCE/app.git
+[submodule "api"]
+	path = api
+	url = https://github.com/Zero-WORK-Zero-EXPERIENCE/api.git
