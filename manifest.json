@@ -4,7 +4,6 @@
   "description": "insert project description here",
   "version": "0.1.0",
   "manifest_version": 3,
-
   "permissions": ["storage", "tabs"],
   "host_permissions": ["https://*.google.com/maps/*"],
 
@@ -21,9 +20,9 @@
 
   "content_scripts": [
     {
-      "matches": ["https://*.google.com/maps/*"],
       "css": ["app/popup/popup.css"],
-      "js": ["app/js/content-script.js"]
+      "js": ["app/js/content-script.js"],
+      "matches": ["https://*.google.com/maps/*"]
     }
   ],
 
@@ -33,6 +32,7 @@
 
   "icons": {
     "16": "app/img/logo-500.png",
+    "32": "app/img/logo-500.png",
     "48": "app/img/logo-500.png",
     "128": "app/img/logo-500.png"
   }
