@@ -9,25 +9,31 @@
   "host_permissions": ["https://*.google.com/maps/*"],
 
   "action": {
-    "default_popup": "app/popup.html",
     "default_title": "insert project name here",
+    "default_popup": "app/popup/popup.html",
     "default_icon": {
-      "16": "app/icons/logo.jpg",
-      "32": "app/icons/logo.jpg",
-      "48": "app/icons/logo.jpg",
-      "128": "app/icons/logo.jpg"
+      "16": "app/img/logo-500.png",
+      "32": "app/img/logo-500.png",
+      "48": "app/img/logo-500.png",
+      "128": "app/img/logo-500.png"
     }
   },
 
   "content_scripts": [
     {
       "matches": ["https://*.google.com/maps/*"],
-      "css": ["app/popup.css"],
-      "js": ["app/js/contentScript.js"]
+      "css": ["app/popup/popup.css"],
+      "js": ["app/js/content-script.js"]
     }
   ],
 
   "background": {
     "service_worker": "app/js/background.js"
+  },
+
+  "icons": {
+    "16": "app/img/logo-500.png",
+    "48": "app/img/logo-500.png",
+    "128": "app/img/logo-500.png"
   }
 }
