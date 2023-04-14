@@ -6,7 +6,6 @@
   "manifest_version": 3,
   "permissions": ["activeTab", "tabs", "scripting", "storage"],
   "host_permissions": ["https://*.google.com/maps/*"],
-
   "action": {
     "default_title": "insert project name here",
     "default_popup": "app/popup/popup.html",
@@ -17,7 +16,6 @@
       "128": "app/img/logo-500.png"
     }
   },
-
   "content_scripts": [
     {
       "css": ["app/popup/popup.css"],
@@ -25,11 +23,9 @@
       "matches": ["https://*.google.com/maps/*"]
     }
   ],
-
   "background": {
     "service_worker": "app/js/background.js"
   },
-
   "commands": {
     "_execute_action": {
       "suggested_key": {
@@ -38,7 +34,6 @@
       }
     }
   },
-
   "icons": {
     "16": "app/img/logo-500.png",
     "32": "app/img/logo-500.png",
